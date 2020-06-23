@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML td tag</title>
+<style>
+th{
+background-color:yellow;
+}
+th,td{
+border:2px solid black;
+padding:10px;
+}
+</style>
+</head>
+<style>
+body{
+background-color:aqua;
+}
+</style>
+<body>
+<h2 align="center">Example of td Tag</h2>
+<table  align="center" style="border-collapse:collapse;background-color:blue" height="500" width="500">
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Price</th>
+</tr>
+<tr>
+<td>Books</td>
+<td>5</td>
+<td>589</td>
+</tr>
+<tr>
+<td>T-shirt</td>
+<td>5</td>
+<td>3500</td>
+</tr>
+<tr>
+<td>Jeans</td>
+<td>2</td>
+<td>5000</td>
+</tr>
+</table>
+<h2>Example of Template tag</h2>
+<button onclick="clickMe()"></button><br>
+<template id="mytemplate">
+<img src=""C:\Users\91958\Desktop\nature1.jpg" height="100" width="100"" alt="nature Image">
+<script>
+alert("Thank you for choosing template.Click Ok for image.")
+</script>
+</template>
+<script>
+function clickMe(){
+var x=document.getElementsByTagName("template")[];
+var clon=x.content.cloneNode(true);
+document.body.appendChild(clon);}
+</script>
+</body>
+</html>
